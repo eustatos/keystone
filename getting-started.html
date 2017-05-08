@@ -1,5 +1,6 @@
 ---
 permalink: /getting-started/
+comments: true
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -142,6 +143,7 @@ sudo chown -R $USER /usr/lib/node_modules/</pre>
         </div>
       </div>
     </div>
+    {% if page.comments %}
     <div id="disqus_thread"></div>
 <script>
 
@@ -162,6 +164,7 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% if page.comments %}
     <div class="docs-footer">
       <div class="container">
         <p>Created by <a href="http://twitter.com/jedwatson" target="_blank">@jedwatson</a>, <a href="http://twitter.com/bladey" target="_blank">@bladey</a> and <a href="http://twitter.com/jossmackison" target="_blank">@jossmackison</a> at <a href="http://www.thinkmill.com.au" target="_blank">Thinkmill</a>, and other <a href="https://github.com/keystonejs/keystone/contributors" target="_blank">contributors</a> under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
